@@ -1,0 +1,73 @@
+<?xml version="1.0" encoding="UTF-8"?>
+
+<?import javafx.scene.Cursor?>
+<?import javafx.scene.control.Button?>
+<?import javafx.scene.control.ChoiceBox?>
+<?import javafx.scene.control.Label?>
+<?import javafx.scene.control.TableColumn?>
+<?import javafx.scene.control.TableView?>
+<?import javafx.scene.control.TextField?>
+<?import javafx.scene.effect.Glow?>
+<?import javafx.scene.image.ImageView?>
+<?import javafx.scene.layout.AnchorPane?>
+<?import javafx.scene.layout.HBox?>
+<?import javafx.scene.layout.VBox?>
+
+<AnchorPane maxHeight="-Infinity" maxWidth="-Infinity" minHeight="-Infinity" minWidth="-Infinity" prefHeight="500.0" prefWidth="800.0" style="-fx-background-color: rgba(241, 207, 153, 0.21);" stylesheets="application.css" xmlns="http://javafx.com/javafx/19" xmlns:fx="http://javafx.com/fxml/1" fx:controller="application.HomeController">
+   <children>
+      <VBox prefHeight="110.0" prefWidth="800.0">
+         <children>
+            <HBox prefHeight="101.0" prefWidth="790.0" style="-fx-border-color: rgba(255, 142, 43, 0.70); -fx-border-width: 5;">
+               <children>
+                  <ImageView fx:id="headerImage" fitHeight="90.0" fitWidth="790.0" pickOnBounds="true" preserveRatio="true">
+                  </ImageView>
+               </children>
+            </HBox>
+            <HBox alignment="TOP_RIGHT" prefHeight="83.0" prefWidth="790.0">
+               <children>
+                  <Button fx:id="myAccountButton" defaultButton="true" mnemonicParsing="false" prefHeight="46.0" prefWidth="170.0" style="-fx-background-color: rgba(246, 186, 93, 1); -fx-border-color: rgba(158, 125, 74, 0.61);" text="My Account">
+                     <cursor>
+                        <Cursor fx:constant="WAIT" />
+                     </cursor></Button>
+                  <Button fx:id="featuredButton" defaultButton="true" mnemonicParsing="false" prefHeight="46.0" prefWidth="170.0" style="-fx-background-color: rgba(246, 186, 93, 1); -fx-border-color: rgba(158, 125, 74, 0.61);" text="Featured">
+                     <cursor>
+                        <Cursor fx:constant="WAIT" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="upcomingButton" defaultButton="true" mnemonicParsing="false" prefHeight="46.0" prefWidth="170.0" style="-fx-background-color: rgba(246, 186, 93, 1); -fx-border-color: rgba(158, 125, 74, 0.61);" text="Upcoming Events">
+                     <cursor>
+                        <Cursor fx:constant="WAIT" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="contactButton" defaultButton="true" mnemonicParsing="false" prefHeight="46.0" prefWidth="170.0" style="-fx-background-color: rgba(246, 186, 93, 1); -fx-border-color: rgba(158, 125, 74, 0.61);" text="Contact Us">
+                     <cursor>
+                        <Cursor fx:constant="WAIT" />
+                     </cursor>
+                  </Button>
+                  <Button fx:id="logoutButton" defaultButton="true" mnemonicParsing="false" prefHeight="46.0" prefWidth="170.0" style="-fx-background-color: rgba(246, 186, 93, 1); -fx-border-color: rgba(158, 125, 74, 0.61);" text="Log out">
+                     <effect>
+                        <Glow />
+                     </effect>
+                  </Button>
+               </children>
+            </HBox>
+         </children>
+      </VBox>
+      <Button fx:id="viewEventButton" layoutX="618.0" layoutY="386.0" mnemonicParsing="false" onAction="#viewEventButtonPressed" prefHeight="47.0" prefWidth="173.0" text="View Event" />
+      <Button fx:id="favoriteButton" layoutX="638.0" layoutY="446.0" mnemonicParsing="false" onAction="#favoriteButtonPressed" prefHeight="37.0" prefWidth="133.0" text="Favorites" />
+      <TableView fx:id="eventTable" layoutX="22.0" layoutY="135.0" prefHeight="349.0" prefWidth="588.0">
+        <columns>
+          <TableColumn fx:id="nameColumn" prefWidth="203.33334350585938" text="Name" />
+          <TableColumn fx:id="locationColumn" prefWidth="95.33331298828125" text="Location" />
+            <TableColumn fx:id="dateColumn" prefWidth="96.0" text="Date" />
+            <TableColumn fx:id="popularityColumn" prefWidth="82.0" text="Popularity" />
+            <TableColumn fx:id="priceColumn" prefWidth="109.33331298828125" text="Price" />
+        </columns>
+      </TableView>
+      <Label fx:id="warningLabel" layoutX="200.0" layoutY="21.0" prefHeight="17.0" prefWidth="370.0" />
+      <ImageView fx:id="selectedImage" fitHeight="128.0" fitWidth="173.0" layoutX="618.0" layoutY="232.0" pickOnBounds="true" preserveRatio="true" />
+      <TextField layoutX="618.0" layoutY="135.0" prefHeight="28.0" prefWidth="173.0" />
+      <Button layoutX="618.0" layoutY="172.0" mnemonicParsing="false" onAction="#favoriteButtonPressed" prefHeight="8.0" prefWidth="71.0" text="Search by" />
+      <ChoiceBox fx:id="searchChoice" layoutX="693.0" layoutY="172.0" prefHeight="25.0" prefWidth="95.0" />
+   </children>
+</AnchorPane>

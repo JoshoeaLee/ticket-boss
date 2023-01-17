@@ -1,0 +1,11 @@
+Six-Sixty 100 Auckland 5 2022-11-11 Concert
+All-Blacks-Ireland 200 Wellington 9 2022-11-15 Sports
+Top-Gun-Maverick 20 Christchurch 6 2022-11-17 Movies
+Bullet-Train 30 Auckland 1 2022-11-10 Movies
+Blonde 40 Wellington 4 2022-11-13 Drama
+Guns-n-Roses 50 Wellington 8 2022-11-09 Event
+India-Blackcaps 250 Wellington 2 2022-11-18 Sports
+Wellington-FC 100 Wellington 7 2022-11-08 Sports
+The-Griegol 120 Auckland 8 2022-11-09 Drama
+Ticket-to-Paradise 230 Christchurch 3 2022-11-19 Movies
+
