@@ -1,5 +1,5 @@
 # ticket-boss
-Skeleton of a ‘Ticket Master’-like service written in Java using Java-FX. Automated testing is used.
+Skeleton of a ‘Ticket Master’-like service written in Java using Java-FX. Automated testing is used for unit and stress testing.
 
 This project was made in a group with people from vastly different backgrounds and skill levels, allowing me to polish my communication, 
 leadership and collaboration abilities.
